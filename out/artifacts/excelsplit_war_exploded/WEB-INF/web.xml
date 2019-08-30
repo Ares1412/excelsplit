@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <display-name>hellodemo</display-name>
+
+    <servlet>
+        <servlet-name>ExcelSplit</servlet-name>
+        <servlet-class>com.xqfunds.servlet.ExcelSplit</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ExcelSplit</servlet-name>
+        <url-pattern>/download</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UploadServlet</servlet-name>
+        <servlet-class>com.xqfunds.servlet.UploadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UploadServlet</servlet-name>
+        <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>GetExcel</servlet-name>
+        <servlet-class>com.xqfunds.servlet.GetExcel</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetExcel</servlet-name>
+        <url-pattern>/getexcel</url-pattern>
+    </servlet-mapping>
+</web-app>
